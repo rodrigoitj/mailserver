@@ -132,9 +132,9 @@
 - Permissões de diretórios ajustadas para vmail:vmail
 
 ## Informações de Acesso e Segurança
-- Servidor: tonet.dev (103.199.186.117)
-- Hostname do Mail: mail.tonet.dev
-- Conta Principal: luciano@tonet.dev
+- Servidor: correa.dev (103.199.186.117)
+- Hostname do Mail: mail.correa.dev
+- Conta Principal: luciano@correa.dev
 - Portas Expostas: 25, 465, 587, 993
 - SSL/TLS: Configurado e ativo
 - Fail2ban: Ativo

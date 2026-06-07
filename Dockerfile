@@ -2,13 +2,13 @@
 FROM docker.io/mailserver/docker-mailserver:latest
 
 # Define variáveis de ambiente padrão
-ENV HOSTNAME=mail.tonet.dev \
-    DOMAINNAME=tonet.dev \
-    MAIL_DOMAIN=tonet.dev \
-    MAIL_HOSTNAME=mail.tonet.dev \
-    POSTMASTER_ADDRESS=postmaster@tonet.dev \
+ENV HOSTNAME=mail.correa.dev \
+    DOMAINNAME=correa.dev \
+    MAIL_DOMAIN=correa.dev \
+    MAIL_HOSTNAME=mail.correa.dev \
+    POSTMASTER_ADDRESS=postmaster@correa.dev \
     SSL_TYPE=manual \
-    LETSENCRYPT_DOMAIN=mail.tonet.dev \
+    LETSENCRYPT_DOMAIN=mail.correa.dev \
     TZ=America/Sao_Paulo \
     DMS_DEBUG=1 \
     ENABLE_SPAMASSASSIN=1 \
@@ -19,9 +19,9 @@ ENV HOSTNAME=mail.tonet.dev \
     PERMIT_DOCKER=network \
     POSTFIX_INET_PROTOCOLS=ipv4 \
     DOVECOT_INET_PROTOCOLS=ipv4 \
-    OVERRIDE_HOSTNAME=mail.tonet.dev \
-    DMS_HOSTNAME=mail.tonet.dev \
-    DMS_DOMAINNAME=tonet.dev \
+    OVERRIDE_HOSTNAME=mail.correa.dev \
+    DMS_HOSTNAME=mail.correa.dev \
+    DMS_DOMAINNAME=correa.dev \
     DOCKER_BIND_PORTS="25,465,587,993,143" \
     DOCKER_HOST_IP="0.0.0.0" \
     NETWORK_ACCESS="allow all"
@@ -68,7 +68,7 @@ RUN openssl genrsa -out /etc/ssl/docker-mailserver/key.pem 4096 \
         -key /etc/ssl/docker-mailserver/key.pem \
         -out /etc/ssl/docker-mailserver/cert.pem \
         -days 3650 \
-        -subj "/C=BR/ST=Sao Paulo/L=Sao Paulo/O=Tonet Dev/OU=Mail/CN=mail.tonet.dev" \
+        -subj "/C=BR/ST=Sao Paulo/L=Sao Paulo/O=Tonet Dev/OU=Mail/CN=mail.correa.dev" \
     && chmod 600 /etc/ssl/docker-mailserver/key.pem \
     && chmod 644 /etc/ssl/docker-mailserver/cert.pem
 

@@ -23,8 +23,8 @@ Este é um servidor de email completo e seguro baseado em Docker, otimizado para
    ```
    
    Variáveis importantes:
-   - `DOMAIN`: Seu domínio principal (ex: tonet.dev)
-   - `HOSTNAME`: Nome do servidor (ex: mail.tonet.dev)
+   - `DOMAIN`: Seu domínio principal (ex: correa.dev)
+   - `HOSTNAME`: Nome do servidor (ex: mail.correa.dev)
    - `SSL_TYPE`: Tipo de SSL (letsencrypt/manual/self-signed)
    - `ENABLE_FAIL2BAN`: Recomendado deixar como 1
    - `ENABLE_SPAMASSASSIN`: Recomendado deixar como 1
@@ -141,9 +141,9 @@ docker exec mailserver setup email del usuario@seudominio.com
 4. Configure os seguintes campos:
    - App Service Name: roundcube
    - App Service Image: roundcube/roundcubemail:1.6.9-apache
-   - Default Host: mail.tonet.dev
+   - Default Host: mail.correa.dev
    - Default Port: 143
-   - SMTP Server: mail.tonet.dev
+   - SMTP Server: mail.correa.dev
    - SMTP Port: 587
    - Plugins: archive,zipdownload
    - Upload Max File Size: 5M
@@ -154,11 +154,11 @@ docker exec mailserver setup email del usuario@seudominio.com
 
 1. Após o deploy, o Roundcube estará disponível em:
    ```
-   https://roundcube.tonet.dev
+   https://roundcube.correa.dev
    ```
 
 2. Use suas credenciais de email para fazer login:
-   - Usuário: seu_email@tonet.dev
+   - Usuário: seu_email@correa.dev
    - Senha: sua_senha_de_email
 
 ### Configurações de Segurança
@@ -181,8 +181,8 @@ Se encontrar problemas de conexão:
 
 2. Teste as portas IMAP e SMTP:
    ```bash
-   telnet mail.tonet.dev 143
-   telnet mail.tonet.dev 587
+   telnet mail.correa.dev 143
+   telnet mail.correa.dev 587
    ```
 
 3. Verifique os logs do Roundcube:

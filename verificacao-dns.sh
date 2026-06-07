@@ -7,7 +7,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m'
 
 # Domínio a ser verificado
-DOMAIN="tonet.dev"
+DOMAIN="correa.dev"
 MAIL_HOST="mail.${DOMAIN}"
 
 echo -e "${YELLOW}Verificando registros DNS para ${DOMAIN}...${NC}\n"

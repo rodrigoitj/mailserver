@@ -1,25 +1,25 @@
 # Guia de Configuração de Clientes de Email
 
-Este guia fornece as informações necessárias para configurar seu cliente de email preferido para acessar sua conta de email no servidor mail.tonet.dev.
+Este guia fornece as informações necessárias para configurar seu cliente de email preferido para acessar sua conta de email no servidor mail.correa.dev.
 
 ## Informações Gerais do Servidor
 
 ### Servidor de Entrada (IMAP)
-- **Host:** mail.tonet.dev
+- **Host:** mail.correa.dev
 - **Porta SSL:** 993 (Recomendado)
 - **Porta não-SSL:** 143 (Disponível se necessário)
 - **Segurança:** SSL/TLS (Recomendado) ou sem SSL
 - **Autenticação:** Normal Password
-- **Username:** seu-email@tonet.dev
+- **Username:** seu-email@correa.dev
 - **Senha:** sua senha
 
 ### Servidor de Saída (SMTP)
-- **Host:** mail.tonet.dev
+- **Host:** mail.correa.dev
 - **Porta Principal:** 587
 - **Porta Alternativa:** 465
 - **Segurança:** STARTTLS (porta 587) ou SSL/TLS (porta 465)
 - **Autenticação:** Normal Password
-- **Username:** seu-email@tonet.dev
+- **Username:** seu-email@correa.dev
 - **Senha:** sua senha
 
 ## Guias Específicos por Cliente
@@ -29,37 +29,37 @@ Este guia fornece as informações necessárias para configurar seu cliente de e
 2. Vá em "Contas e Importação"
 3. Em "Verificar e-mail de outras contas", clique em "Adicionar uma conta de e-mail"
 4. Use as configurações:
-   - IMAP: mail.tonet.dev:993 (SSL)
-   - SMTP: mail.tonet.dev:587 (STARTTLS)
+   - IMAP: mail.correa.dev:993 (SSL)
+   - SMTP: mail.correa.dev:587 (STARTTLS)
 
 ### Microsoft Outlook
 1. Adicione nova conta
 2. Escolha configuração manual
 3. Selecione IMAP/SMTP
 4. Use as configurações:
-   - IMAP: mail.tonet.dev:993 (SSL/TLS) ou 143 (sem SSL)
-   - SMTP: mail.tonet.dev:587 (STARTTLS)
+   - IMAP: mail.correa.dev:993 (SSL/TLS) ou 143 (sem SSL)
+   - SMTP: mail.correa.dev:587 (STARTTLS)
 
 ### Apple Mail (iOS/macOS)
 1. Adicione nova conta
 2. Escolha "Outra conta de Mail"
 3. Use as configurações:
-   - IMAP: mail.tonet.dev:993 (SSL) ou 143 (sem SSL)
-   - SMTP: mail.tonet.dev:587 (TLS)
+   - IMAP: mail.correa.dev:993 (SSL) ou 143 (sem SSL)
+   - SMTP: mail.correa.dev:587 (TLS)
 
 ### Mozilla Thunderbird
 1. Adicione nova conta
 2. Escolha configuração manual
 3. Use as configurações:
-   - IMAP: mail.tonet.dev:993 (SSL/TLS) ou 143 (sem SSL)
-   - SMTP: mail.tonet.dev:587 (STARTTLS)
+   - IMAP: mail.correa.dev:993 (SSL/TLS) ou 143 (sem SSL)
+   - SMTP: mail.correa.dev:587 (STARTTLS)
 
 ### Clientes Mobile (Android)
 1. Adicione nova conta
 2. Escolha "Outra conta" ou "IMAP"
 3. Use as configurações:
-   - IMAP: mail.tonet.dev:993 (SSL/TLS) ou 143 (sem SSL)
-   - SMTP: mail.tonet.dev:587 (STARTTLS)
+   - IMAP: mail.correa.dev:993 (SSL/TLS) ou 143 (sem SSL)
+   - SMTP: mail.correa.dev:587 (STARTTLS)
 
 ## Resolução de Problemas
 
@@ -84,7 +84,7 @@ Este guia fornece as informações necessárias para configurar seu cliente de e
 ### Suporte
 
 Se você encontrar problemas na configuração, entre em contato com o administrador do sistema em:
-- Email: postmaster@tonet.dev
+- Email: postmaster@correa.dev
 
 ## Boas Práticas
 

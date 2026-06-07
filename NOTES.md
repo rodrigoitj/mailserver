@@ -14,12 +14,12 @@
 - POP3: 110 (sem SSL), 995 (SSL)
 
 ### Domínios e Hostnames
-- Domínio Principal: tonet.dev
-- Hostname do Mail: mail.tonet.dev
+- Domínio Principal: correa.dev
+- Hostname do Mail: mail.correa.dev
 - Roundcube URL: tonetdev-roundcube.i3bl61.easypanel.host
 
 ### Credenciais e Acessos
-- Usuário Padrão: admin@tonet.dev
+- Usuário Padrão: admin@correa.dev
 - Diretório de Emails: /var/mail/%d/%n
 - Formato: Maildir
 
@@ -78,8 +78,8 @@
 - Não tentar criar manualmente, deixar a imagem base gerenciar
 - Configurações importantes no ambiente:
   ```
-  myhostname = mail.tonet.dev
-  mydomain = tonet.dev
+  myhostname = mail.correa.dev
+  mydomain = correa.dev
   ```
 
 ### 6. Roundcube
@@ -115,13 +115,13 @@
 - Para porta 143:
   - Verificar se `disable_plaintext_auth = no`
   - Confirmar que `listen = *` está configurado
-  - Testar com `telnet mail.tonet.dev 143`
+  - Testar com `telnet mail.correa.dev 143`
 
 ## Fluxo de Trabalho Ideal
 
 1. **Setup Inicial**
    ```bash
-   ./setup.sh email add admin@tonet.dev senha123
+   ./setup.sh email add admin@correa.dev senha123
    ```
 
 2. **Verificação de Configuração**
@@ -134,9 +134,9 @@
 3. **Teste de Conexão**
    ```bash
    # Teste IMAP sem SSL
-   telnet mail.tonet.dev 143
+   telnet mail.correa.dev 143
    # Teste IMAP com SSL
-   openssl s_client -connect mail.tonet.dev:993
+   openssl s_client -connect mail.correa.dev:993
    ```
 
 4. **Monitoramento**
