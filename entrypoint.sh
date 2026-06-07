@@ -8,19 +8,19 @@ echo "Contents of /etc/hosts: $(cat /etc/hosts)"
 
 # Adicionar antes do start do mailserver
 echo "Configurando hostname/domainname..."
-echo "mail.tonet.dev" > /etc/hostname
-echo "tonet.dev" > /etc/domainname
-hostname mail.tonet.dev
-domainname tonet.dev
+echo "mail.correa.dev" > /etc/hostname
+echo "correa.dev" > /etc/domainname
+hostname mail.correa.dev
+domainname correa.dev
 
 # Adicionar verificação de certificados
-if [ ! -f "/tmp/ssl/${DOMAINNAME:-tonet.dev}/fullchain.pem" ]; then
+if [ ! -f "/tmp/ssl/${DOMAINNAME:-correa.dev}/fullchain.pem" ]; then
     echo "Gerando certificados SSL de emergência..."
-    mkdir -p "/tmp/ssl/${DOMAINNAME:-tonet.dev}"
+    mkdir -p "/tmp/ssl/${DOMAINNAME:-correa.dev}"
     openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-        -keyout "/tmp/ssl/${DOMAINNAME:-tonet.dev}/privkey.pem" \
-        -out "/tmp/ssl/${DOMAINNAME:-tonet.dev}/fullchain.pem" \
-        -subj "/C=BR/ST=SP/L=Sao Paulo/O=Mail Server/CN=${HOSTNAME:-mail.tonet.dev}"
+        -keyout "/tmp/ssl/${DOMAINNAME:-correa.dev}/privkey.pem" \
+        -out "/tmp/ssl/${DOMAINNAME:-correa.dev}/fullchain.pem" \
+        -subj "/C=BR/ST=SP/L=Sao Paulo/O=Mail Server/CN=${HOSTNAME:-mail.correa.dev}"
 fi
 
 # Start the mailserver

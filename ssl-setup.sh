@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configurações
-DOMAIN="tonet.dev"
+DOMAIN="correa.dev"
 MAIL_HOST="mail.${DOMAIN}"
 SSL_DIR="config/ssl"
 

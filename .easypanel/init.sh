@@ -10,15 +10,15 @@ else
     LOGS_PATH="/root/mailserver/mail-logs"
     CONFIG_PATH="/root/mailserver/config"
     SSL_PATH="/root/mailserver/ssl"
-    HOSTNAME="mail.tonet.dev"
-    DOMAINNAME="tonet.dev"
+    HOSTNAME="mail.correa.dev"
+    DOMAINNAME="correa.dev"
 fi
 
 # Adicionar verificação de variáveis críticas
 if [ -z "${HOSTNAME}" ] || [ -z "${DOMAINNAME}" ]; then
     echo "ERRO: Variáveis HOSTNAME e DOMAINNAME devem estar configuradas!"
-    echo "HOSTNAME=${HOSTNAME:-mail.tonet.dev}" > /app/.easypanel/.env
-    echo "DOMAINNAME=${DOMAINNAME:-tonet.dev}" >> /app/.easypanel/.env
+    echo "HOSTNAME=${HOSTNAME:-mail.correa.dev}" > /app/.easypanel/.env
+    echo "DOMAINNAME=${DOMAINNAME:-correa.dev}" >> /app/.easypanel/.env
     exit 1
 fi
 

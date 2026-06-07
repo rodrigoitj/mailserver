@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Configurações
-DOMAIN="tonet.dev"
-MAIL_DOMAIN="tonet.dev"
-MAIL_HOSTNAME="mail.tonet.dev"
+DOMAIN="correa.dev"
+MAIL_DOMAIN="correa.dev"
+MAIL_HOSTNAME="mail.correa.dev"
 
 # Criar estrutura de diretórios
 mkdir -p config data state logs ssl/${DOMAIN}
